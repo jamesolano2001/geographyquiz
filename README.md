@@ -1,1 +1,1 @@
-# geographyquiz
+# Salzburg Geography Quiz
