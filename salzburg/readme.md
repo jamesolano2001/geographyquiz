@@ -1,18 +1,7 @@
-# OpenLayers + Vite
+In order to run this project on your browser, please do the following:
 
-This example demonstrates how the `ol` package can be used with [Vite](https://vitejs.dev/).
-
-To get started, run the following (requires Node 14+):
-
-    npx create-ol-app my-app --template vite
-
-Then change into your new `my-app` directory and start a development server (available at http://localhost:5173):
-
-    cd my-app
-    npm start
-
-To generate a build ready for production:
-
-    npm run build
-
-Then deploy the contents of the `dist` directory to your server.  You can also run `npm run serve` to serve the results of the `dist` directory for preview.
+Download the ZIP file and extract it
+Open a code editor (Preferably Visual Studio Code) or in terminal whilst in the file
+Type 'cd salzburg' into the terminal
+enter 'npm i' into the terminal to install node_modules
+enter 'npm start' to locally host the project
