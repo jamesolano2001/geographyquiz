@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/x-icon" href="https://openlayers.org/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Arimo&display=swap" rel="stylesheet">
+    
+    <title>Geography Quiz</title>  
+    <div id="title-screen"> <!--Setting up the title screen-->
+      <div id="maintitle"><img src="title.png" alt="Geography Game" /></div>
+      <div id="subtitle">By James Olano</div>
+      <div id="blur-layer"></div>
+      <div id="start-button">Start</div>
+    </div> 
+    <canvas id="game-canvas"></canvas> 
+  </head>
+  <body>
+    
+    
+    <div id="container">
+      <div id="ui">
+        <h1><div id="title"><img src="title.png" alt="Geography Game" /></div></h1>
+        <div id="question"></div>
+        <div id="options"></div>
+        <div id="result"></div>
+        <div id="rank"></div>
+        <div id="replay-button"></div>
+        <div id="marker-container"> <!--Used for explaining the answer-->
+            <div id="marker"></div>
+            <div id="marker-explain"></div>
+        </div>
+    </div>
+      <div id="map"></div>
+    </div>
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>

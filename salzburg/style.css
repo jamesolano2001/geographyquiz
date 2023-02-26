@@ -1,0 +1,237 @@
+@import "node_modules/ol/ol.css";
+@import url('https://fonts.googleapis.com/css2?family=Arimo&display=swap');
+
+
+
+*{
+  font-family: 'Arimo', sans-serif;
+}
+
+button{
+  cursor: pointer;
+}
+img{
+  width:170%;
+  height:150%;
+
+}
+#title{
+  max-width:100%;
+  max-height:100%;
+  padding-right: 50%;
+}
+
+#parent {
+  position: relative;
+}
+
+html, body {
+  margin: 0;  
+  height: 100%;
+  color:white;
+  background-color: black;
+}
+#container {
+  display: grid;
+  grid-template-columns: 20% 80%;
+  grid-template-rows: 1fr;
+  height: 100%;
+ 
+}
+
+#ui{
+  padding-left: 20px;
+  flex-basis: 25%;
+}
+
+#map {
+  flex-basis: 75%;
+
+}
+.question {
+  font-size: larger;
+  margin-bottom: 10%;
+}
+#options {
+  margin-bottom: 10px;
+  
+
+}
+#option {
+  margin-right: 10px;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+#option {
+  background: rgb(0,172,238);
+  background: linear-gradient(0deg, rgba(0,172,238,1) 0%, rgba(2,126,251,1) 100%);
+  width: 130px;
+  height: 40px;
+  line-height: 42px;
+  padding: 0;
+  border: none;
+  
+}
+#option span {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+#option:before,
+#option:after {
+  position: absolute;
+  content: "";
+  right: 0;
+  top: 0;
+   background: rgba(2,126,251,1);
+  transition: all 0.3s ease;
+}
+#option:before {
+  height: 0%;
+  width: 2px;
+}
+#option:after {
+  width: 0%;
+  height: 2px;
+}
+#option:hover{
+   background: transparent;
+  box-shadow: none;
+}
+#option:hover:before {
+  height: 100%;
+}
+#option:hover:after {
+  width: 100%;
+}
+#option span:hover{
+   color: rgba(2,126,251,1);
+}
+#option span:before,
+#option span:after {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 0;
+   background: rgba(2,126,251,1);
+  transition: all 0.3s ease;
+}
+#option span:before {
+  width: 2px;
+  height: 0%;
+}
+#option span:after {
+  width: 0%;
+  height: 2px;
+}
+#option span:hover:before {
+  height: 100%;
+}
+#option span:hover:after {
+  width: 100%;
+}
+
+.result {
+  font-size: larger;
+  margin-top: 10px;
+}
+
+.rank {
+  font-size: larger;
+  margin-top: 10px;
+}
+
+#marker-container {
+  position: absolute;
+  top: 80%;
+  left: 80%;
+  transform: translate(-50%, -50%);
+  display: none; /* Initially hidden */
+}
+
+/* #marker {
+  width: 25px;
+  height: 25px;
+  background-color: red;
+  border-radius: 50%;
+} */
+
+#marker-explain {
+  background-color: black;
+  padding: 10px;
+  border-radius: 5px;
+  width:100%;
+  display: none; /* Initially hidden */
+}
+
+
+#title-screen {
+  position: absolute;
+  z-index: 101;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+#maintitle{
+  position: absolute;
+  z-index: 1000;
+  top: 0;
+  padding-top: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#blur-layer { /*Adds the blur effect to the background during the titlescreen*/
+  position: absolute;
+  z-index: 50;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(10px);
+}
+
+#start-button {
+  position: absolute;
+  z-index: 1000; 
+  padding: 10px 20px;
+  background-color: blue;
+  color: white;
+  cursor: pointer;
+}
+
+#replay-button {
+  padding-top: 2%;
+}
+
+
+
+
+#game-canvas {
+  position: absolute;
+  top: 10;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+#subtitle{
+  position: absolute;
+  font-weight: bold;
+  z-index: 1000;
+  padding-bottom: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color:black;
+}
