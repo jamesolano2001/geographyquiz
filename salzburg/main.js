@@ -42,6 +42,7 @@ var map = new Map({
 
   var points = 0; //Used for counting number of questions the player got right
   var askedQuestions = [];  //To prevent duplicate questions
+  
   //21 Questions in total
   var questions = [
     {
