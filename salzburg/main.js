@@ -206,12 +206,16 @@ var map = new Map({
     //End game condition
     if (askedQuestions.length === 10) {
       document.getElementById('result').innerHTML = '<div class="result">Total points: ' + points+'/10 </div>';
+      if (point == 10){
+        document.getElementById('rank').innerHTML = '<div class="rank"> Congratulations! Full score! </div>';
+        document.getElementById('replay-button').innerHTML = '<button style="background:#3630a3;color:white; width: 90%; height: 3rem;" onClick="window.location.reload();">Replay</button>';
+      }
       if(points>5){
-        document.getElementById('rank').innerHTML = '<div class="rank"> 4.0 GPA </div>';
+        document.getElementById('rank').innerHTML = '<div class="rank"> Good job! </div>';
         document.getElementById('replay-button').innerHTML = '<button style="background:#3630a3;color:white; width: 90%; height: 3rem;" onClick="window.location.reload();">Replay</button>';
       }
       else if(points === 5){
-        document.getElementById('rank').innerHTML = '<div class="rank">Decent</div>';
+        document.getElementById('rank').innerHTML = '<div class="rank">You pass!</div>';
         document.getElementById('replay-button').innerHTML = '<button style="background:#3630a3;color:white; width: 90%; height: 3rem;" onClick="window.location.reload();">Replay</button>';
       }
       else{
